@@ -1,0 +1,21 @@
+server:
+  port: 8081 #端口号
+
+spring:
+  application:
+    name: scu-project #应用名称
+  datasource:
+    url: jdbc:mysql://localhost:3306/itoffer?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: dzy051202
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml #指定映射文件路径
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名映射
+
+logging:
+  level:
+    com.scu.scu2026project.mapper: debug #设计日志级别
