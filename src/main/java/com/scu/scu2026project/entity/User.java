@@ -13,9 +13,9 @@ public class User {
     private Integer id;
     @TableField("USER_LOGNAME")
     private String loginName;
-    @TableId("USER_PWD")
+    @TableField("USER_PWD")
     private String password;
-    @TableId("USER_REALNAME")
+    @TableField("USER_REALNAME")
     private String realName;
     @TableField("USER_EMAIL")
     private String email;
